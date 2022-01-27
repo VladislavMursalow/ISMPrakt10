@@ -12,6 +12,11 @@ namespace ISMPrakt10
         public string Surname { get; set; }
         public DateTime BirthdayDate { get; set; }
 
+        public int GetDaysOfLive() 
+        {
+            return (int)Math.Floor((DateTime.Now - BirthdayDate).TotalDays);
+        }
+
         public override string ToString()
         {
             return $"{Name} {Surname}, Народився : {BirthdayDate.ToShortDateString()}";
