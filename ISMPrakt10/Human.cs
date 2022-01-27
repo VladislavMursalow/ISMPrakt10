@@ -12,6 +12,18 @@ namespace ISMPrakt10
         public string Surname { get; set; }
         public DateTime BirthdayDate { get; set; }
 
+        public Human()
+        {
+
+        }
+
+        public Human(string name, string surname, DateTime date)
+        {
+            Name = name;
+            Surname = surname;
+            BirthdayDate = date;
+        }
+
         public int GetDaysOfLive() 
         {
             return (int)Math.Floor((DateTime.Now - BirthdayDate).TotalDays);
