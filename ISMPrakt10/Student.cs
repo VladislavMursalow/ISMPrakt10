@@ -23,12 +23,12 @@ namespace ISMPrakt10
 
         public string GetOnlyUniversityData() 
         {
-            return $"Faculty: {Faculty}\nGrpoup: {Grpoup}\n University: {University}\n Course: {Course}";
+            return $"\nFaculty: {Faculty}\nGrpoup: {Grpoup}\n University: {University}\n Course: {Course}\n";
         }
 
         public override string ToString()
         {
-            return base.ToString() + $"Faculty: {Faculty}\nGrpoup: {Grpoup}\n University: {University}\n Course: {Course}";
+            return base.ToString() + $"\nFaculty: {Faculty}\nGrpoup: {Grpoup}\nUniversity: {University}\nCourse: {Course}\n";
         }
     }
 }
